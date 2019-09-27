@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Creation
+This project was created using ReactJS.  In tandem, Amazon Web Services was used to deploy the application.
+
+AWS Certificate Manager was used to generate an SSL certificate for the custom domain name, which is used to setup HTTPS for the site.
+
+AWS S3 was used to upload the static content of the application to a “bucket”, which will then be served to visitors of the website.
+
+AWS CloudFront is AWS’s content delivery network, which was used to distribute the static content to nodes around the globe, providing a better user experience for worldwide traffic.
+
+AWS Route53 was used to manage the DNS routing, which allowed me to point my custom domain to the CloudFront distribution created.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,4 +77,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# personal-website
